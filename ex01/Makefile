@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: root <root@student.42.fr>                  +#+  +:+       +#+         #
+#    By: marwan <marwan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/30 18:50:05 by root              #+#    #+#              #
-#    Updated: 2025/10/30 18:50:17 by root             ###   ########.fr        #
+#    Updated: 2025/11/11 20:16:22 by marwan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ex01 Span.cpp
+NAME = ex01
 
-SRC = main.cpp
+SRC = main.cpp Span.cpp
 
 CFLAGS =  -Wall -Werror -Wextra -std=c++98
 

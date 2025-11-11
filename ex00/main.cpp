@@ -17,7 +17,7 @@ int main()
 	try 
 	{
 		std::vector<int> container= {1, 2 ,3 ,3 ,5 ,8};
-		easyfind(container, 58);
+		easyfind(container, 3);
 	}
 	catch(std::exception &e)
 	{

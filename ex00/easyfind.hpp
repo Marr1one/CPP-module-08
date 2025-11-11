@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 
 template <typename T>

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 02:37:03 by root              #+#    #+#             */
-/*   Updated: 2025/10/30 18:57:04 by root             ###   ########.fr       */
+/*   Updated: 2025/11/11 20:37:35 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Span
 		Span(unsigned int size);
 		~Span();
 		void addNumber(int n);
+		void addRange(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 		int shortestSpan();
 		int longestSpan();
 		class noMoreSpaceException : public std::exception
@@ -31,7 +32,7 @@ class Span
 			public :
 				const char * what() throw()
 				{
-					return ("No more space !\n");
+					return ("No more space !");
 				}
 		};
 };
