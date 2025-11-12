@@ -6,9 +6,12 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 02:37:03 by root              #+#    #+#             */
-/*   Updated: 2025/11/11 20:37:35 by marwan           ###   ########.fr       */
+/*   Updated: 2025/11/12 03:25:14 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef SPAN_HPP
+#define SPAN_HPP
 
 #include <iostream>
 #include <limits.h>
@@ -38,3 +41,4 @@ class Span
 };
 
 
+#endif
