@@ -6,7 +6,7 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 03:13:01 by marwan            #+#    #+#             */
-/*   Updated: 2025/11/12 03:35:19 by marwan           ###   ########.fr       */
+/*   Updated: 2025/12/12 16:09:57 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <stack>
 
 template <typename T>
-class MutantStack : public std::stack<T>
+class MutantStack : public std::stack<T>    
 {
     private :
     public :

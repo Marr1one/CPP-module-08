@@ -6,7 +6,7 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 02:37:03 by root              #+#    #+#             */
-/*   Updated: 2025/11/12 03:25:14 by marwan           ###   ########.fr       */
+/*   Updated: 2026/01/28 16:51:35 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,11 @@ class Span
 	public :
 		Span(unsigned int size);
 		~Span();
+		Span(const Span &other);
+		Span &operator=(const Span &other);
 		void addNumber(int n);
+		unsigned int getSize() const;
+		std::vector<int> getVector() const;
 		void addRange(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 		int shortestSpan();
 		int longestSpan();

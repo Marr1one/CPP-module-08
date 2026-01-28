@@ -6,7 +6,7 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 20:00:39 by marwan            #+#    #+#             */
-/*   Updated: 2025/11/11 20:37:37 by marwan           ###   ########.fr       */
+/*   Updated: 2026/01/28 16:52:46 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,32 @@ Span::Span(unsigned int n) : _size(n)
 {
 }
 
+Span::Span(const Span &other) : _size(other._size), _vector(other._vector)
+{
+}
+
+Span &Span::operator=(const Span &other)
+{
+    if (this != &other)
+    {
+        this->_size = other._size;
+        this->_vector = other._vector;
+    }
+    return (*this);
+}
+
 Span::~Span(){}
+
+unsigned int Span::getSize() const
+{
+    return (this->_size);
+}
+
+std::vector<int> Span::getVector() const
+{
+    return (this->_vector);
+}
+
 
 void Span::addNumber(int n)
 {
@@ -41,7 +66,7 @@ int Span::longestSpan()
                 longest = abs(diff);
             j++;
         }
-        i++;
+        i++; //aussi faisable avec abs (std::min - std max)
     }
     return (longest);
 }

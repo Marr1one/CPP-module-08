@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: root <root@student.42.fr>                  +#+  +:+       +#+         #
+#    By: marwan <marwan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/28 23:11:00 by root              #+#    #+#              #
-#    Updated: 2025/10/29 17:12:54 by root             ###   ########.fr        #
+#    Updated: 2025/12/10 17:40:57 by marwan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,9 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 re : fclean $(NAME)
+
+# secret:
+# 	@echo "SECRET TROUVE"
 
 .Phony : 
 	re clean all fclean
