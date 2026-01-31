@@ -6,7 +6,7 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 20:00:39 by marwan            #+#    #+#             */
-/*   Updated: 2026/01/28 16:52:46 by marwan           ###   ########.fr       */
+/*   Updated: 2026/01/29 15:54:13 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,23 +52,25 @@ void Span::addNumber(int n)
 
 int Span::longestSpan()
 {
-    int i = 0;
-    int j;
-    int longest = INT_MIN;
-    int diff;
-    while (i < _vector.size())
-    {
-        j = i + 1;
-        while (j < _vector.size())
-        {
-            diff = _vector[j] - _vector[i];
-            if (abs(diff) > longest)
-                longest = abs(diff);
-            j++;
-        }
-        i++; //aussi faisable avec abs (std::min - std max)
-    }
-    return (longest);
+    // int i = 0;
+    // int j;
+    // int longest = INT_MIN;
+    // int diff;
+    // while (i < _vector.size())
+    // {
+    //     j = i + 1;
+    //     while (j < _vector.size())
+    //     {
+    //         diff = _vector[j] - _vector[i];
+    //         if (abs(diff) > longest)
+    //             longest = abs(diff);
+    //         j++;
+    //     }
+    //     i++; //aussi faisable avec abs (std::min - std max)
+    // }
+    int max = *std::max_element(this->_vector.begin(), this->_vector.end());
+    int min = *std::min_element(this->_vector.begin(), this->_vector.end());
+    return (max-min);
 }
 
 int Span::shortestSpan()

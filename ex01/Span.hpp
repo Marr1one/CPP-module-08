@@ -6,7 +6,7 @@
 /*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 02:37:03 by root              #+#    #+#             */
-/*   Updated: 2026/01/28 16:51:35 by marwan           ###   ########.fr       */
+/*   Updated: 2026/01/29 15:52:41 by marwan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <limits.h>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 
 class Span
 {
