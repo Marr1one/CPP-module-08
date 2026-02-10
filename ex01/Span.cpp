@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marwan <marwan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: maissat <maissat@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 20:00:39 by marwan            #+#    #+#             */
-/*   Updated: 2026/01/29 15:54:13 by marwan           ###   ########.fr       */
+/*   Updated: 2026/02/10 16:24:10 by maissat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ std::vector<int> Span::getVector() const
 }
 
 
-void Span::addNumber(int n)
+void Span::addNumber(const int n)
 {
     if (_vector.size() >= _size)
         throw noMoreSpaceException();
@@ -66,7 +66,6 @@ int Span::longestSpan()
     //             longest = abs(diff);
     //         j++;
     //     }
-    //     i++; //aussi faisable avec abs (std::min - std max)
     // }
     int max = *std::max_element(this->_vector.begin(), this->_vector.end());
     int min = *std::min_element(this->_vector.begin(), this->_vector.end());
